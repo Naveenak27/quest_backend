@@ -1,0 +1,28 @@
+{
+  "name": "notes-app-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.50.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "libreoffice-convert": "^1.6.1",
+    "mammoth": "^1.9.1",
+    "multer": "^2.0.1",
+    "node-stream-zip": "^1.15.0",
+    "pdf-parse": "^1.1.1",
+    "unzipper": "^0.12.3",
+    "vm2": "^3.9.19"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

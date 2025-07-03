@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const questionsRoutes = require('./routes/questions');
-const uploadRoutes = require('./routes/upload');
+const questionsRoutes = require('./questions');
 const { createClient } = require('@supabase/supabase-js');
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -19,7 +18,6 @@ app.use('/uploads', express.static('uploads'));
 
 // Routes
 app.use('/api/questions', questionsRoutes);
-app.use('/api/upload', uploadRoutes);
 app.get('/api/codes', async (req, res) => {
   try {
     const { data, error } = await supabase
